@@ -1,0 +1,29 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+struct student
+{
+    int studentID;
+    string studentName;
+    string studentMajor;
+};
+
+int main()
+{
+    ifstream inStream;
+    student newStudent;
+    inStream.open("student_data1_19.txt");
+    if(inStream.fail())
+    {
+        cout << "FILE OPEN FAIL" << endl;
+    }
+    while(!inStream.eof())
+    {
+
+    }
+
+    return 0;
+}
